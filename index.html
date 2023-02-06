@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="resets.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <main class="product">
+        <img
+          src="images\image-product-mobile.jpg"
+          class="perfume-img-1"
+          alt="Picture of the perfume"
+        />
+        <img
+          src="images\image-product-desktop.jpg"
+          class="perfume-img-2"
+          alt="Picture of the perfume"
+        />
+        <div class="main-text-container">
+          <p class="regular spaced-out">PERFUME</p>
+          <h1 class="bold heading">Gabrielle Essence Eau De Parfum</h1>
+          <p class="regular">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price-container">
+            <h1 class="bold price">$149.99</h1>
+            <p class="regular"><span class="strike">$169.99</span></p>
+          </div>
+          <button class="cart-btn" id="open-popup">
+            <img
+              class="cart-icon"
+              src="images\icon-cart.svg"
+              alt="Shopping cart"
+            />
+            Add to Cart
+          </button>
+        </div>
+      </main>
+      <footer class="attribution">
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/VladKosovsky" target="_blank"
+            >Vladislav Kosovsky.</a
+          >
+        </p>
+      </footer>
+    </div>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <h2 class="popup-text">Item has been added to your cart!</h2>
+        <button id="close-popup" class="close-popup">Close</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
